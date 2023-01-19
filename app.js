@@ -3,17 +3,19 @@ const app = Vue.createApp({
     // template: '<h2>I am a template</h2>'
     data() {
         return {
+            personal_site_url: 'https://delanomarques.netlify.app/',
+            github_url: 'https://github.com/delanobmarques',
             showBooks: false,
             // title: 'The Final Empire',
             // author: 'Brandon Sanderson',
             // age: 43,
             books: [
-                { title: 'The Alchemist', author: 'Paulo Coelho'},
-                { title: 'The Da Vinci Code', author: 'Dan Brown'},
-                { title: 'Think and Grow Rich', author: 'Napolean Hill'},
-                { title: 'The Lord of the Rings', author: 'J.R.R. Tolkien'},
-                { title: "Harry Potter and the Philosopher's Stone", author: 'J.K. Rowling'},
-                { title: 'The Lion, the Witch, and the Wardrobe', author: 'J C.S. Lewis'},
+                { title: 'The Alchemist', author: 'Paulo Coelho', img: 'assets/1.jpg'},
+                { title: 'The Da Vinci Code', author: 'Dan Brown', img: 'assets/2.jpg'},
+                { title: 'Think and Grow Rich', author: 'Napoleon Hill', img: 'assets/3.jpg'},
+                { title: 'The Lord of the Rings', author: 'J.R.R. Tolkien', img: 'assets/4.jpg'},
+                { title: "Harry Potter and the Philosopher's Stone", author: 'J.K. Rowling', img: 'assets/5.jpg'},
+                { title: 'The Lion, the Witch, and the Wardrobe', author: 'J C.S. Lewis', img: 'assets/6.jpg'},
             ],
             x: 0,
             y: 0

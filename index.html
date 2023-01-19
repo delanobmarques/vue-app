@@ -10,10 +10,16 @@
 </head>
 <body>
     <div id="app">
+        <!-- attribute binding -->
+        <a v-bind:href="personal_site_url" target="_blank" class="links">Binding url property with v-bind</a>
+        <a :href="github_url" target="_blank" class="links">Binding url property with "":"</a>
+
+        <br>
         <div v-if="showBooks">
             <!-- <p>{{ title }} - {{ author}} - {{ age }}</p> -->
             <ul>
                 <li v-for="book in books">
+                    <img :src="book.img" :alt="book.title">
                     <h3>{{ book.title }}</h3>
                     <p>{{ book.author }}</p>
                 </li>

@@ -17,3 +17,12 @@ button {
     margin: 20px;
     display: inline-block;
 }
+
+.links {
+    text-decoration: none;
+    padding: 20px 10px;
+}
+
+img {
+    width: 150px;    
+}
