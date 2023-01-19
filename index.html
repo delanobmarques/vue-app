@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/vue@3.0.2"></script>
+    <link rel="stylesheet" href="./styles.css">
     <title>Introduction to Vue</title>
 </head>
 <body>
@@ -15,14 +16,23 @@
 
         <button v-on:click="age++">Increase age</button>
         <button v-on:click="age--">Decrease age</button>
-        <div @click="changeTitle('New Book Title')">Change Title</div>
+        <div @click="changeTitle('New Book Title')" class="change-title">Change Title</div>
         <button @click="toggleShowBooks">
             <span v-if="showBooks">Hide Books</span>
             <span v-else>Show Books</span>
         </button>
-        
+
+        <br>
         <!--  uses css display:none instead of adding or removing block -->
         <div v-show="showBooks">currently showing books</div>
+        <br>
+        
+        <!-- mouse events -->
+        <div class="box" @mouseover="handleEvent($event,5)">mouseover (enter)</div>
+        <div class="box" @mouseleave="handleEvent">mouseleave</div>
+        <div class="box" @dblclick="handleEvent">double click</div>
+        <div class="box" @mousemove="handleMouseMove">position - {{ x }} {{ y }}</div> 
+
     </div>
     
     <script src="./app.js"></script>

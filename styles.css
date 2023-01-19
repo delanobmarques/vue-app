@@ -1,0 +1,19 @@
+button {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.change-title {
+    padding: 10px;
+    font-weight: 700;
+}
+
+.box {
+    padding: 100px 0;
+    width: 400px;
+    text-align: center;
+    background: #85CBFA;
+    margin: 20px;
+    display: inline-block;
+}
